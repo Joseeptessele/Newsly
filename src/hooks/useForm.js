@@ -18,7 +18,7 @@ function useForm(initialState, validate, action) {
         setSubmitting(false);
       }
     }
-  }, [action, errors, initialState, isSubmitting]);
+  }, [errors]);
 
   function handleChange(event) {
     setValues((previousValues) => ({
